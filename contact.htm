@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CONTACT US</title>
+</head>
+
+<!--
+RESTAURANT web page for Web Based Design course.
+"My Great Restaurant" contact page
+By Nicholas Connel
+v1.0 (Does not utilize CCS)
+March 7, 2018
+-->
+
+<div id=main>
+<body>
+
+  <div id=title>
+  <h1>Contact My Great RESTAURANT</h1>
+  <hr />
+  </div>
+
+  <div id=links>
+  <p><a href="rest_index.htm" target="_blank">Home</a> &nbsp
+  <a href="menu.htm" target="_blank">Menu</a> &nbsp
+  <a href="contact.htm" target="_blank">Contact Us</a></p>
+  <hr />
+  </div>
+
+  <div id=dataGather>
+  <form action="submit.html" method="POST">
+    <label for="name">Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <input type="text" id="name" name="name"><br /><p></p>
+
+    <label for="email">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <input type="text" id="email" name="email"><br /><p></p>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber"><br /><br /><br />
+    <label for="reason">Reason for Inquiry:</label>
+    <select id="contact" name="contact">
+      <option value="catering" selected>Catering</option>
+      <option value="party">Private Party</option>
+      <option value="feedback">Feedback</option>
+      <option value="other">Other</option>
+    </select><p></p>
+
+    <label for="info">Additional Information</lable>
+    <textarea id="info"></textarea><br /><br />
+
+    <label for="repeatPatron">Have you been to the restaurant before?</label>
+    <input type="radio" id="choice1" name="beenThere" value="yes">
+    <label for="choice1">No</lable>
+    <input type="radio" id="choice2" name="beenThere" value="no">
+    <label for="choice2">Yes</lable><br /><br />
+
+    <label for="contactDays">Best Days to Contact You:</label>
+    <input type="checkbox" id="monday" name="day" value="monday">
+    <label for="frontEnd">M</lable>
+    <input type="checkbox" id="tuesday" name="day" value="tuesday">
+    <label for="backEnd">T</lable>
+    <input type="checkbox" id="wednesday" name="day" value="wednesday">
+    <label for="database">W</lable>
+    <input type="checkbox" id="thursday" name="day" value="thursday">
+    <label for="backEnd">Th</lable>
+    <input type="checkbox" id="friday" name="day" value="friday">
+    <label for="database">F</lable><br /><br />
+    <input type="submit" name="submit" value="Submit">
+  </form><p></p>
+  </div>
+</div>
+
+  <div id="foot">
+  <hr />
+  <footer>
+    <p align="center">4036 Chicago Avenue S, Minneapolis, MN 55407</p>
+    <p align="center">(612) 414-2044</p><p></p>
+      <p align="center">&copy; Nicholas AP Connel 2018</p>
+  </footer>
+  </div>
+</body>
+</html>
