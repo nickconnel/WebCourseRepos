@@ -1,122 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>MENU</title>
+  <title>MENU</title>
+  <link rel="stylesheet" href="restaurantStyle.css" type="text/css">
+  <style>
+
+  /*Colors used
+  Earth-Yellow Palette
+  Colors used:
+  1.  Sand1                                               999859
+  2.  GreenMustard                                        D7D531
+  3.  GreenGrey                                           757416
+  4.  LightYellow                                         F9F8C6
+  5.  Background                                          F4F0F0
+  6.  Corporate cobalt by entitydesign - colourlovers.com 44749d
+  */
+
+  body {
+    background-color: #F4F0F0;
+  }
+
+  table {
+      width: 100%;
+      table-layout: fixed;
+      caption: font-size 30px;
+    }
+
+  table, th, td {
+    text-align: center;
+  }
+
+  .smaller {
+    width: 66%;
+    margin-left: auto;
+margin-right: auto;
+  }
+
+  th {
+    font-size: 30px;
+  }
+
+  td {
+    font-size: 16px;
+  }
+
+  caption {
+      text-align: center;
+      margin-bottom: 5px;
+      text-transform: lowercase;
+      font-size: 160%;
+      padding: 5px;
+      letter-spacing: 10px;
+      font-weight: bold;
+  }
+
+  hr {
+    border-top: 3px solid #D7D531; /*2*/
+    border-bottom: 3px solid #D7D531; /*2*/
+    border-left: 3px #D7D531; /*2*/
+  }
+  </style>
 </head>
 
   <!--
   RESTAURANT web page for Web Based Design course.
   "My Great Restaurant" menu page
   By Nicholas Connel
-  v1.0 (Does not utilize CCS)
-  March 7, 2018
+  v2.0 (utilize CCS)
+  March 9, 2018
   -->
 
 <div id=main>
 <body>
 
   <div id=title>
-  <h1 align="center">MY GREAT RESTAURANT</h1>
+  <h1>MY GREAT RESTAURANT</h1>
   <hr />
   </div>
 
   <div id=links>
   <p><a href="rest_index.htm" target="_blank">Home</a> &nbsp
-  <a href="menu.htm" target="_blank">Menu</a> &nbsp
-  <a href="contact.htm" target="_blank">Contact Us</a></p>
+    <a href="menu.htm" target="_blank">Menu</a> &nbsp
+    <a href="contact.htm" target="_blank">Contact Us</a></p>
   <hr />
   </div>
 
-  <div id=content>
   <table>
     <tr>
-      <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBurger and Fries&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-      <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHot Dog and Chips&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-      <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspItalian Sausage and Peppers</th>
+      <th>Burger and Fries</th>
+      <th>Hot Dog and Chips</th>
+      <th>Italian Sausage and Peppers</th>
     </tr>
     <tr>
-      <td align="center">An American Classic!</td>
-      <td align="center">&nbsp</td>
-      <td align="center">&nbsp</td>
+      <td>An American Classic!</td>
+      <td>&nbsp</td>
+      <td>&nbsp</td>
     </tr>
     <tr>
-      <td align="center">Your Choice - with or without cheese</td>
-      <td align="center">An Summer Classic</td>
-      <td align="center">An All-Time Favorite!</td>
+      <td>Your Choice - with or without cheese</td>
+      <td>An Summer Classic</td>
+      <td>An All-Time Favorite!</td>
     </tr>
     <tr>
-      <td align="center">Pickle, onion, tomato, and lettuce</td>
-      <td align="center">Your choice - white or wheat bun</td>
-      <td align="center">Your choice - mild or spicy</td>
+      <td>Pickle, onion, tomato, and lettuce</td>
+      <td>Your choice - white or wheat bun</td>
+      <td>Your choice - mild or spicy</td>
     </tr>
     <tr>
-      <td align="center">Served with our famous thick cut</td>
-      <td align="center">Relish, mustard, and ketchup</td>
-      <td align="center">Cole Slaw</td>
+      <td>Served with our famous thick cut</td>
+      <td>Relish, mustard, and ketchup</td>
+      <td>Cole Slaw</td>
     </tr>
     <tr>
-      <td align="center">french fries</td>
-      <td align="center">Served with our house-made chips</td>
-      <td align="center">Served with garlick mashers</td>
+      <td>french fries</td>
+      <td>Served with our house-made chips</td>
+      <td>Served with garlick mashers</td>
     </tr>
     <tr>
-      <td align="center">$7.95</td>
-      <td align="center">$7.95</td>
-      <td align="center">$10.95</td>
+      <td>$7.95</td>
+      <td>$7.95</td>
+      <td>$10.95</td>
     </tr>
   </table><p></p><p></p>
 
   <table>
     <tr>
-      <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTenderloin Sandwich and Chips&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-      <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHouse Salad&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-      <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBrisket Sandwich and Fries&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+      <th>Tenderloin Sandwich and Chips</th>
+      <th>House Salad</th>
+      <th>Brisket Sandwich and Fries</th>
     </tr>
     <tr>
-      <td align="center">&nbsp</td>
-      <td align="center">&nbsp</td>
-      <td align="center">A Taste of texas!</td>
+      <td>&nbsp</td>
+      <td>&nbsp</td>
+      <td>A Taste of texas!</td>
     </tr>
     <tr>
-      <td align="center">&nbsp</td>
-      <td align="center">On the Lighter Side</td>
-      <td align="center">Smoked Brisket on thick-cut Texas</td>
+      <td>&nbsp</td>
+      <td>On the Lighter Side</td>
+      <td>Smoked Brisket on thick-cut Texas</td>
     </tr>
     <tr>
-      <td align="center">Really Hits the Spot!</td>
-      <td align="center">Your choice - with or without cheese</td>
-      <td align="center">Toast</td>
+      <td>Really Hits the Spot!</td>
+      <td>Your choice - with or without cheese</td>
+      <td>Toast</td>
     </tr>
     <tr>
-      <td align="center">Plain or Sesame Seed Bun</td>
-      <td align="center">Iceberg lettuce, tomatoes, peppers</td>
-      <td align="center">Cole Slaw</td>
+      <td>Plain or Sesame Seed Bun</td>
+      <td>Iceberg lettuce, tomatoes, peppers</td>
+      <td>Cole Slaw</td>
     </tr>
     <tr>
-      <td align="center">Pickle, onion, tomato, and lettuce</td>
-      <td align="center">Thousand Island or Ranch Dressing</td>
-      <td align="center">Served with our famous thick-cut</td>
+      <td>Pickle, onion, tomato, and lettuce</td>
+      <td>Thousand Island or Ranch Dressing</td>
+      <td>Served with our famous thick-cut</td>
     </tr>
     <tr>
-      <td align="center">Served with our house-made chips</td>
-      <td align="center">Served with a dinner roll</td>
-      <td align="center">french fries</td>
+      <td>Served with our house-made chips</td>
+      <td>Served with a dinner roll</td>
+      <td>french fries</td>
     </tr>
     <tr>
-      <td align="center">$7.95</td>
-      <td align="center">$6.95</td>
-      <td align="center">$7.95</td>
+      <td>$7.95</td>
+      <td>$6.95</td>
+      <td>$7.95</td>
     </tr>
   </table><p></p>
-  </div>
+
+<br />
+<hr />
+<div class="smaller">
 </div>
 
+<table class="smaller">
+  <caption>Beverages</caption>
+  <tr>
+    <td>Root Beer</td>
+    <td>$3.00</td>
+  </tr>
+  <tr>
+    <td>Bottled Water</td>
+    <td>$1.25</td>
+  </tr>
+  <tr>
+      <td>Lemonade</td>
+      <td>$1.00</td>
+  </tr>
+  <tr>
+      <td>Iced Tea</td>
+      <td>$1.25</td>
+  </tr>
+</table>
+</div>
 <div id="foot">
   <hr />
   <footer>
-    <p align="center">4036 Chicago Avenue S, Minneapolis, MN 55407</p>
-    <p align="center">(612) 414-2044</p><p></p>
-    <p align="center">&copy; Nicholas AP Connel 2018</p>
+    <p>4036 Chicago Avenue S, Minneapolis, MN 55407</p>
+    <p>(612) 414-2044</p>
+    <p>&copy; Nicholas AP Connel 2018</p>
   </footer>
 </div>
 </body>

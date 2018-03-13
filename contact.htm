@@ -1,22 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CONTACT US</title>
+  <title>CONTACT US</title>
+
+  <!--External style sheet for links and footer styling -->
+  <link rel="stylesheet" href="restaurantStyle.css" type="text/css">
+  <style>
+
+  /*Colors used
+  Earth-Yellow Palette
+  Colors used:
+  1.  Sand1                                               999859
+  2.  GreenMustard                                        D7D531
+  3.  GreenGrey                                           757416
+  4.  LightYellow                                         F9F8C6
+  5.  Background                                          F4F0F0
+  6.  Corporate cobalt by entitydesign - colourlovers.com 44749d
+*/
+
+    body {
+      background-color: #F4F0F0;
+    }
+
+    input[type=text] {
+      background-color: #999859;
+      border: 2px solid #757416;
+      width: 70%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      color: black;
+      text-align: center;
+      box-sizing:  border-box;
+      display: block;
+      margin: 0 auto;
+    }
+
+    fieldset {
+      background-color: #d5d2cb;/**/
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    .MakeBold {
+      font-weight: bold;
+    }
+
+    input, label {
+      font-size: 16px;
+      font-family: Arial, Helvetica, serif;
+      /*font-weight: bold;*/
+    }
+
+    .requiredField {
+        font-weight: none;
+    }
+
+    legend {
+      font-size: 16px;
+      font-family: Arial, Helvetica, serif;;
+    }
+
+    select {
+      background-color: #999859;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      font-family: "glyphicons-halflings-regular", monospace;
+      width: 100%;
+      height: 200px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 3px solid #757416; /*corporate cobalt by entitydesign - colourlovers.com */
+      border-radius: 3px;
+      background-color: #999859;
+      resize: none;
+    }
+
+    input, submit {
+      background-color: #999859;/*4*/
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+  </style>
 </head>
 
 <!--
 RESTAURANT web page for Web Based Design course.
 "My Great Restaurant" contact page
 By Nicholas Connel
-v1.0 (Does not utilize CCS)
-March 7, 2018
+v2.0 (utilize CCS)
+March 9, 2018
 -->
 
 <div id=main>
 <body>
 
   <div id=title>
-  <h1>Contact My Great RESTAURANT</h1>
+  <h1>Contact My Great Restaurant</h1>
   <hr />
   </div>
 
@@ -28,17 +120,21 @@ March 7, 2018
   </div>
 
   <div id=dataGather>
-  <form action="submit.html" method="POST">
-    <label for="name">Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <div class="MakeBold">
+      <!--Required Fields in BOLD-->
+    </div>
+
+  <form action="#" method="POST">
+    <label for="name" >Name:</label>
     <input type="text" id="name" name="name"><br /><p></p>
 
-    <label for="email">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-    <input type="text" id="email" name="email"><br /><p></p>
+    <label class="MakeBold" for="email">Email:</label>
+    <input type="text" id="email" name="email" required><br /><p></p>
 
     <label for="phone">Phone Number:</label>
     <input type="text" id="phoneNumber" name="phoneNumber"><br /><br /><br />
+
+
     <label for="reason">Reason for Inquiry:</label>
     <select id="contact" name="contact">
       <option value="catering" selected>Catering</option>
@@ -75,9 +171,9 @@ March 7, 2018
   <div id="foot">
   <hr />
   <footer>
-    <p align="center">4036 Chicago Avenue S, Minneapolis, MN 55407</p>
-    <p align="center">(612) 414-2044</p><p></p>
-      <p align="center">&copy; Nicholas AP Connel 2018</p>
+    <p>4036 Chicago Avenue S, Minneapolis, MN 55407</p>
+    <p>(612) 414-2044</p>
+      <p>&copy; Nicholas AP Connel 2018</p>
   </footer>
   </div>
 </body>
