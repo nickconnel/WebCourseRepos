@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="displayMousePosition.js">
+    </script>
+</head>
+<body onclick="toggleTracking()" onmousemove="updateMousePosition(event);">
+    <h1>Display the Mouse Position</h1>
+    <p>Click anywhere on the page to toggle the
+         mouse position tracking.</p>
+    <hr />
+    <div>
+        Mouse tracking: <span id="trackingStatus">NOT TRACKING</span>
+    </div>
+    <fieldset>
+        <label>Mouse X:</label><label id="mousePositionX"></label>
+        <label>Mouse Y:</label><label id="mousePositionY"></label>
+    </fieldset>
+</body>
+</html>
