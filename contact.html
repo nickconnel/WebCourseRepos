@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CONTACT US</title>
+
+  <link rel="stylesheet" href="restaurantStyle.css" type="text/css">
+
+  <style>
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <noscript>&nbspJavaScript is off.  Please enable to view full site.</noscript>
+</head>
+
+<!--
+RESTAURANT web page for Web Based Design course.
+"My Great Restaurant" contact page
+By Nicholas Connel
+v3.0 (utilize CCS)
+March 17, 2018
+-->
+
+<body>
+<div class="container-fluid">
+  <div id=title>
+  <h1>MY GREAT RESTAURANT</h1>
+  <hr />
+  </div>
+
+  <div id=links>
+    <ul class="nav nav-tabs">
+      <li><a href="rest_index.html"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+      <li><a href="menu.html"><span class="glyphicon glyphicon-cutlery"> Menu</span></a></li>
+      <li class="active"><a href="contact.html"><span class="glyphicon glyphicon-send"> Contact Us</span></a></li>
+    </ul>
+  </div>
+
+  <h2>Contact Us</h2>
+  <form action="#" method="POST">
+        <div class="col-xs-2"><label for="name" >Name:</label></div>
+        <div class="col-xs-10"><input type="text" id="name" name="name"></div>
+        <div class="col-xs-2"><label for="email">Email:</label></div>
+        <div class="col-xs-10"><input type="text" id="email" name="email" required></div>
+        <div class="col-xs-2"><label for="phone">Phone Number:</label></div>
+        <div class="col-xs-10"><input type="text" id="phoneNumber" name="phoneNumber"></div>
+        <div class="col-xs-2"><label for="reason">Reason for Inquiry:</label></div>
+
+        <div class="col-xs-10"><select id="contact" name="contact">
+            <option value="catering" selected>Catering</option>
+            <option value="party">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="col-xs-12">
+          <label for="info">Additional Information</lable>
+          <textarea id="info"></textarea>
+        </div>
+        <div class="col-xs-12">
+          <label for="repeatPatron">Have you been to the restaurant before?</label>
+          <label for="choice1">No</lable>
+          <input type="radio" id="choice1" name="beenThere" value="yes">
+          <label for="choice2">Yes</lable>
+          <input type="radio" id="choice2" name="beenThere" value="no">
+        </div>
+        <div class="col-xs-12">
+          <label for="contactDays">Best Days to Contact You:</label>
+          <input type="checkbox" id="monday" name="day" value="monday">
+          <label for="frontEnd">M</lable>
+          <input type="checkbox" id="tuesday" name="day" value="tuesday">
+          <label for="backEnd">T</lable>
+          <input type="checkbox" id="wednesday" name="day" value="wednesday">
+          <label for="database">W</lable>
+          <input type="checkbox" id="thursday" name="day" value="thursday">
+          <label for="backEnd">Th</lable>
+          <input type="checkbox" id="friday" name="day" value="friday">
+          <label for="database">F</lable>
+        </div>
+        <div class="col-xs-12">
+          <input type="submit" name="submit" value="Submit">
+        </div>
+  </form>
+
+  <div id="foot">
+  <div class="col-xs-12"><hr /></div>
+  <footer>
+    <p>4036 Chicago Avenue S, Minneapolis, MN 55407</p>
+    <p>(612) 414-2044</p>
+      <p>&copy; Nicholas AP Connel 2018</p>
+  </footer>
+  </div>
+</div>
+</body>
+</html>
