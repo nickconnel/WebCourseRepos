@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="L7.js"></script>
+    <title>Lucky 7's</title>
+    <style>
+
+      body {
+        font-family: cursive;
+        font-size: 24px;
+      }
+
+      table, th, td{
+      border: 1px solid #292533; /* pavement behaivior by autopsyturvy-corourlovers.com */
+      padding: 5px 10px 5px 10px; /*top right bottom left*/
+      border-spacing: 2px 5px; /*Same as padding*/
+      }
+      table {
+        width: 100%;
+      }
+      td, th {
+        height: 30px;
+      }
+      th {
+        background-color: #5b7d87; /* - hush by obvious - colourlovers.com*/
+      }
+
+      tr:nth-child(odd) {
+        background-color: #d512cb; /*color = rando*/
+      }
+    </style>
+  </head>
+
+  <body>
+  <div class="container">
+    <h1>Lucky 7's</h1>
+
+    <div class="form-group">
+      <label for="usr">Money:</label>
+      <input type="number" class="form-control" id='n1'>
+    </div>
+
+    <button onclick="runGame(document.getElementById('n1').value);">Play</button>
+
+    <table id="resultsTable">
+      <caption>Results</caption>
+      <tr>
+        <td>Starting Bet</td>
+        <td>$0</td>
+      </tr>
+      <tr>
+        <td>Total Rolls Before Going Broke</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Highest Amount Won</td>
+        <td>$0</td>
+      </tr>
+      <tr>
+        <td>Roll Count at Highest Amount Won</td>
+        <td>0</td>
+      </tr>
+    </table>
+<br />
+<span id="ShowThisAfterButton">Put in some money to play.  Any positive amount.</span>
+
+  </div>
+  </body>
+</html>
